@@ -12,4 +12,9 @@ IMAGE_INSTALL += "mtd-utils \
 		rsync \
 		util-linux-mkfs \
                 sunxi-tools \
+	        mtd-utils-ubifs \
+                mtd-utils-misc \
 		"
+
+IMAGE_FEATURES += "ssh-server-openssh package-management"
+
