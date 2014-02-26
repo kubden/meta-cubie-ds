@@ -11,9 +11,10 @@ IMAGE_INSTALL += "mtd-utils \
 		e2fsprogs-tune2fs \
 		rsync \
 		util-linux-mkfs \
-                sunxi-tools \
-	        mtd-utils-ubifs \
-                mtd-utils-misc \
+        sunxi-tools \
+	    mtd-utils-ubifs \
+        mtd-utils-misc \
+        truckinstall \
 		"
 
 IMAGE_FEATURES += "ssh-server-openssh package-management"
