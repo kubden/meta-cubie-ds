@@ -18,15 +18,14 @@ do_compile() {
     :
 }
 
-do_install () {
-	
+do_install () {	
 	install -m 0755 -d ${D}${ROOT_HOME}/Setup
+	install -m 0755 -d ${D}${ROOT_HOME}/Data
         install -m 0755 ${WORKDIR}/nand-install.sh      ${D}${ROOT_HOME}/Setup/nand-install.sh
 	install -m 0755 ${WORKDIR}/network-setup.sh     ${D}${ROOT_HOME}/Setup/network-setup.sh
 	install -m 0644 ${WORKDIR}/interfaces.in        ${D}${ROOT_HOME}/Setup/interfaces.in		
-	install -m 0644 ${WORKDIR}/bootpartition_tar_gz ${D}${ROOT_HOME}/Setup/bootpartition.tar.gz
+	install -m 0644 ${WORKDIR}/bootpartition_tar_gz ${D}${ROOT_HOME}/Data/bootpartition.tar.gz
 }
-
 
 FILES_${PN} = "${ROOT_HOME}/Setup/*"
 
